@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Privacy Policy · EV Desk</title>
+  <meta name="description" content="How EV Desk collects, uses and protects your data.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --neon: #0CFE08; --neon-deep: #0A9E06; --neon-soft: #D5FDD4;
+      --black: #020305; --gray: #F7F7F7; --white: #FFFFFF;
+      --muted: #6E7179; --line: #EBEBEB;
+    }
+    * { box-sizing: border-box; }
+    html { -webkit-text-size-adjust: 100%; }
+    body {
+      margin: 0; background: var(--gray); color: var(--black);
+      font: 400 17px/1.65 "Urbanist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 64px; }
+    header { display: flex; align-items: center; gap: 10px; margin-bottom: 36px; }
+    header img { width: 36px; height: 36px; }
+    header span { font-weight: 700; font-size: 20px; }
+    h1 { font-size: clamp(32px, 7vw, 44px); line-height: 1.1; margin: 0 0 8px; font-weight: 800; }
+    .updated { color: var(--muted); margin: 0 0 28px; }
+    .card {
+      background: var(--white); border-radius: 24px; padding: 8px 28px 24px;
+      box-shadow: 0 8px 24px rgba(0,0,0,.06);
+    }
+    h2 { font-size: 22px; margin: 28px 0 8px; font-weight: 700; }
+    h3 { font-size: 17px; margin: 18px 0 4px; font-weight: 700; }
+    p, li { color: #1C1D21; }
+    ul { padding-left: 22px; margin: 8px 0; }
+    li { margin: 4px 0; }
+    a { color: var(--neon-deep); font-weight: 700; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .highlight {
+      background: var(--neon-soft); border-radius: 16px; padding: 14px 18px; margin: 16px 0;
+    }
+    .highlight strong { color: var(--black); }
+    footer { color: var(--muted); font-size: 14px; text-align: center; margin-top: 32px; }
+    @media (max-width: 480px) { .card { padding: 4px 20px 20px; border-radius: 20px; } }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <img src="logo.png" alt="" width="36" height="36">
+      <span>EV Desk</span>
+    </header>
+
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: 11 October 2026</p>
+
+    <main class="card">
+      <p>EV Desk ("we", "the app") helps electric-vehicle owners in India find chargers, track rides and plan charging. This policy explains what data the app collects, why, and the choices you have.</p>
+
+      <div class="highlight">
+        <strong>In short:</strong> we collect only what the app needs to work. We never sell your data or use it for advertising, and you can delete your account and all its data at any time.
+      </div>
+
+      <h2>1. Data we collect</h2>
+      <h3>Account information</h3>
+      <ul>
+        <li>Your email address and password. Passwords are stored securely hashed by our authentication provider, and we never see them.</li>
+        <li>If you use <em>Continue with Google</em>: your Google account's name and email address.</li>
+        <li>Your name, as you enter it.</li>
+      </ul>
+      <h3>Vehicle and app settings</h3>
+      <ul>
+        <li>Your city, the EV model you choose, battery level, drive mode and map style.</li>
+      </ul>
+      <h3>Location</h3>
+      <ul>
+        <li><strong>Approximate and precise location</strong>, only after you grant permission. We use it to show nearby chargers, centre the map and check whether you can reach a destination.</li>
+        <li><strong>Ride routes:</strong> only when <em>you</em> start a ride, the app records your GPS route, distance, speed and time until you end the ride. It keeps recording with the screen off, and Android shows a notification while it does. Location is not collected in the background at any other time.</li>
+      </ul>
+      <h3>Activity</h3>
+      <ul>
+        <li>Your rides, charging sessions (estimated energy and cost) and the charger status reports you submit ("working", "busy", "not working").</li>
+      </ul>
+      <p>We do <strong>not</strong> collect contacts, photos, files, payment information or advertising identifiers.</p>
+
+      <h2>2. How we use data</h2>
+      <ul>
+        <li>To provide the app's features: chargers near you, range and charging estimates, ride history and savings.</li>
+        <li>To sync your data to your account so it is available when you sign in on another phone.</li>
+        <li>To show other riders a charger's latest <strong>status</strong>. Reports are shared only as the status itself; your name and identity are never shown to other users.</li>
+      </ul>
+      <p>We do not sell your data, and we do not use it for advertising or profiling.</p>
+
+      <h2>3. Where data is stored</h2>
+      <p>Data is stored with <strong>Supabase</strong> (database and authentication) on servers in <strong>Mumbai, India</strong>, and sent over encrypted connections (HTTPS). Google sign-in is provided by <strong>Google</strong>. Map images are loaded from map tile servers, which receive standard request information such as your IP address.</p>
+
+      <h2>4. Retention and deletion</h2>
+      <ul>
+        <li>Your data is kept for as long as your account exists.</li>
+        <li><strong>Delete your account anytime in the app: Profile → Delete account.</strong> This permanently deletes your account, profile, rides, charging history and status reports.</li>
+        <li>You can also delete your account on the web: <a href="https://ev-desk.github.io/delete-account/">ev-desk.github.io/delete-account</a>, or by emailing <a href="mailto:support.evdesk@gmail.com">support.evdesk@gmail.com</a>.</li>
+      </ul>
+
+      <h2>5. Your choices</h2>
+      <ul>
+        <li>Location permission is optional. Without it, the app uses your city's centre.</li>
+        <li>You can stop a ride recording at any time.</li>
+        <li>You can sign out at any time.</li>
+      </ul>
+
+      <h2>6. Security</h2>
+      <p>Every account can only access its own data. This is enforced by the database itself (row-level security). All connections are encrypted.</p>
+
+      <h2>7. Children</h2>
+      <p>EV Desk is intended for users aged 18 and over and is not directed at children.</p>
+
+      <h2>8. Changes to this policy</h2>
+      <p>If we change this policy, we will update the date above and, for significant changes, let you know in the app.</p>
+
+      <h2>9. Contact</h2>
+      <p>Questions or requests about your data? Email <a href="mailto:support.evdesk@gmail.com">support.evdesk@gmail.com</a>.</p>
+    </main>
+
+    <footer>© 2026 EV Desk · <a href="https://ev-desk.github.io/delete-account/">Delete your account</a></footer>
+  </div>
+</body>
+</html>
